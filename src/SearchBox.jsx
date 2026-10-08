@@ -39,7 +39,6 @@ export default function SearchBox() {
 
   return (
     <div className="SearchBox">
-      <h3>Search for the weather!</h3>
       <form onSubmit={handleSubmit}>
         <TextField
           id="city"
@@ -55,6 +54,7 @@ export default function SearchBox() {
           Search
         </Button>
       </form>
+      <br></br>
     </div>
   );
 }

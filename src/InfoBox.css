@@ -6,4 +6,5 @@
 .cardContainer {
   display: flex;
   justify-content: center;
+  padding: 22px;
 }

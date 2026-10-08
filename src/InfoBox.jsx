@@ -18,12 +18,24 @@ export default function InfoBox() {
   };
   return (
     <div className="InfoBox">
-      <h1 style={{ color: "black" }}>Weather Info-</h1>
-      <br></br>
+      <h2 style={{ color: "black" }}>
+        Weather Info - <i>{info.weather}</i>
+      </h2>
+
       <div className="cardContainer">
-        <Card sx={{ maxWidth: 380 }}>
+        <Card
+          sx={{
+            maxWidth: 345,
+            background: "rgba(255, 255, 255, 0.25)",
+            backdropFilter: "blur(12px)",
+            WebkitBackdropFilter: "blur(12px)",
+            border: "1px solid rgba(255, 255, 255, 0.35)",
+            borderRadius: "20px",
+            boxShadow: "0 8px 32px rgba(0, 0, 0, 0.15)",
+          }}
+        >
           <CardMedia
-            sx={{ height: 180 }}
+            sx={{ height: 160 }}
             image={INIT_URL}
             title="broken clouds"
           />
